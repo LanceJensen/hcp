@@ -1,0 +1,31 @@
+Path generation source code:
+
+//        // Print code
+//        for(int folderDepth = 40; folderDepth < 61; folderDepth++ ) {
+//        	String requestMapping = "@RequestMapping(\"/copy";
+//        	for(int i = 0; i < folderDepth; i++) {
+//        		requestMapping = requestMapping + "/{fileName" + i + "}";
+//        	}
+//        	requestMapping = requestMapping + "\")";
+//        	System.out.println(requestMapping);
+//        	
+//        	String method = "public ResponseEntity<byte[]> getFile(";
+//        	for(int i = 0; i < folderDepth; i++) {
+//        		method = method + "@PathVariable String fileName" + i;
+//        		if(i != folderDepth-1) {
+//        			method = method +",";
+//        		}
+//			}
+//        	method = method + ") {";
+//        	System.out.println(method);
+//        	
+//        	String call = "return fileRetrivalService.getFileData(";
+//        	for(int i = 0; i < folderDepth; i++) {
+//        		call = call + "fileName" + i;
+//        		if(i != folderDepth-1) {
+//        			call = call +",";
+//        		}
+//			}
+//        	call = call + ");";
+//        	System.out.println(call);
+//        	System.out.println("}\n\n");
