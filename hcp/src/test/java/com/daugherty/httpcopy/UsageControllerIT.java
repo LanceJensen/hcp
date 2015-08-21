@@ -39,7 +39,7 @@ public class UsageControllerIT {
 	@Test
 	public void getHello() throws Exception {
 		ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
-		assertThat(response.getBody(), equalTo("Http copy is up and running on "+ InetAddress.getLocalHost().getHostAddress()));
+		assertThat(response.getBody(), equalTo("Http copy is up and running on "+ InetAddress.getLocalHost().getHostAddress() + ":" + port));
 		
 	}
 }

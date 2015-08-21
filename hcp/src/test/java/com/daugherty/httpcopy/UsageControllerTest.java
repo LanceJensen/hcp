@@ -9,6 +9,7 @@ import java.net.InetAddress;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockServletContext;
@@ -37,6 +38,6 @@ public class UsageControllerTest {
 		
 		mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
-				.andExpect(content().string(equalTo("Http copy is up and running on "+ InetAddress.getLocalHost().getHostAddress())));
+				.andExpect(content().string(equalTo("Http copy is up and running on "+ InetAddress.getLocalHost().getHostAddress() + ":0")));
 	}
 }
