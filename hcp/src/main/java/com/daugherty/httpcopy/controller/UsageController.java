@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 public class UsageController {
 
-	 @Value("${local.server.port}")
+	 @Value("${server.port}")
 	 private int port;
 	 
     @RequestMapping("/")
