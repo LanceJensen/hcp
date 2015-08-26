@@ -1,11 +1,15 @@
 What: HTTP Copy Utility allows you to host your file system for copying on the intranet/internet.
 
+HTTP Copy Utility is a simple to use and deploy http file copy solution.
+
+What: HTTP Copy Utility allows you to host your file system for copying on the intranet/internet.
+
 How to build:
-	1.  Download the project from GitHub:
+	1.  Download the project from GitHub: https://github.com/LanceJensen/hcp/hcp
 	2.  Run maven command goals clean and install i.e. "mvn clean install" in the same directory as the project pom.xml.
 	
 How to download:
-	1.  Simply pull down from GitHub using your favorite browser from:
+	1.  Simply pull down from GitHub using your favorite browser from: https://github.com/LanceJensen/hcp/raw/master/hcp/LatestRelease/hcp-1.0.1.jar
 	
 How to use:
 	1. Start the server. i.e. "java -jar hcp-1.0.0.jar"	// Works on Mac/Window/*nix OS's
@@ -15,5 +19,4 @@ How to use:
 	3. Use your favorite http client to download files from the remote file system.  Both examples a and b below are equivalent.
 		a. wget 192.168.56.1:7777/C:\path\to\file.txt
 		b. wget 192.168.56.1:7777/C:/path/to/file.txt
-
 		
